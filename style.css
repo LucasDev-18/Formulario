@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #0014c4 0%, #6604c2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fafafa;
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.form {
+  padding: 20px;
+}
+
+.header {
+  background-color: #eee;
+  padding: 20px;
+
+}
+
+.form-control {
+  margin-bottom: px;
+  padding: 10px;
+  position: relative;
+}
+
+.form-control label {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  display: block;
+  border: 2px solid #a1a1a1;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control i {
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  
+  left: 10px;
+  visibility: hidden;
+}
+
+.form button {
+  background-color: #263cff;
+  border: solid 2px #263cff;
+  color: #fafafa;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+.form button:hover {
+  cursor: pointer;
+  background-color: #001aff;
+  transition: 0.9s;
+}
+
+/*=====ERROR and SUCCESS=====*/
+
+.form-control.success input {
+  border-color: #1c9e1c;
+}
+
+.form-control.success i.fa-circle-check {
+  color: #1c9e1c;
+  visibility: visible;
+}
+
+.form-control.error input {
+  border-color: #ff2f2f;
+}
+
+.form-control.error i.fa-circle-exclamation {
+  color: #ff2f2f;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #ff2f2f;
+}
