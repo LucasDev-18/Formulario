@@ -10,7 +10,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(90deg, #0014c4 0%, #6604c2 100%);
+  background-image: url(./bg-img/Hexagon\ \(1\).svg);
   display: flex;
   justify-content: center;
   align-items: center;
